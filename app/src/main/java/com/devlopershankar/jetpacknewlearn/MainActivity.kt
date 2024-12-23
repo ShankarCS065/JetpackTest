@@ -39,7 +39,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             JetPacknewLearnTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                   test()
+                   state()
                 }
             }
         }
