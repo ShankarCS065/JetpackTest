@@ -39,67 +39,68 @@ class MainActivity : ComponentActivity() {
         setContent {
             JetPacknewLearnTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                   state()
+
+                    NavHostApp()
                 }
             }
         }
     }
 }
 
-@Preview(showBackground = true, showSystemUi = true)
-@Composable
-fun test() {
-
-    Box(
-        modifier = Modifier.fillMaxSize(),
-        contentAlignment = Alignment.Center
-    ){
-        Card(
-            modifier = Modifier.fillMaxWidth().padding(16.dp),
-        ) {
-            Column(
-                modifier = Modifier.fillMaxWidth().padding(16.dp),
-                verticalArrangement = Arrangement.Center,
-                horizontalAlignment = Alignment.CenterHorizontally
-            ) {
-
-                Text(text = "Hello Learn Jetpack", fontSize = 24.sp, fontWeight = FontWeight.Bold)
-
-                Spacer(modifier = Modifier.height(16.dp))
-
-                Image(painter = painterResource(id = R.drawable.logo),
-                    contentDescription = "",
-                    contentScale = ContentScale.Crop,
-                    modifier = Modifier.size(100.dp).clip(RoundedCornerShape(10.dp))
-
-                )
-
-                Spacer(modifier = Modifier.height(16.dp))
-
-                Row(
-                    modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.spacedBy(8.dp)
-
-                ) {
-                    Button(
-                        onClick = {},
-                        modifier = Modifier.weight(1f)
-                    ) {
-                        Text(text="Share")
-                    }
-
-                    Button(
-                        onClick = {},
-                        modifier = Modifier.weight(1f)
-                    ) {
-                        Text(text="Save")
-                    }
-
-                }
-
-            }
-        }
-    }
+//@Preview(showBackground = true, showSystemUi = true)
+//@Composable
+//fun test() {
+//
+//    Box(
+//        modifier = Modifier.fillMaxSize(),
+//        contentAlignment = Alignment.Center
+//    ){
+//        Card(
+//            modifier = Modifier.fillMaxWidth().padding(16.dp),
+//        ) {
+//            Column(
+//                modifier = Modifier.fillMaxWidth().padding(16.dp),
+//                verticalArrangement = Arrangement.Center,
+//                horizontalAlignment = Alignment.CenterHorizontally
+//            ) {
+//
+//                Text(text = "Hello Learn Jetpack", fontSize = 24.sp, fontWeight = FontWeight.Bold)
+//
+//                Spacer(modifier = Modifier.height(16.dp))
+//
+//                Image(painter = painterResource(id = R.drawable.logo),
+//                    contentDescription = "",
+//                    contentScale = ContentScale.Crop,
+//                    modifier = Modifier.size(100.dp).clip(RoundedCornerShape(10.dp))
+//
+//                )
+//
+//                Spacer(modifier = Modifier.height(16.dp))
+//
+//                Row(
+//                    modifier = Modifier.fillMaxWidth(),
+//                    horizontalArrangement = Arrangement.spacedBy(8.dp)
+//
+//                ) {
+//                    Button(
+//                        onClick = {},
+//                        modifier = Modifier.weight(1f)
+//                    ) {
+//                        Text(text="Share")
+//                    }
+//
+//                    Button(
+//                        onClick = {},
+//                        modifier = Modifier.weight(1f)
+//                    ) {
+//                        Text(text="Save")
+//                    }
+//
+//                }
+//
+//            }
+//        }
+//    }
 
 
 //    Column(
@@ -114,4 +115,4 @@ fun test() {
 
 
 
-}
+//}
